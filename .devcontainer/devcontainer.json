@@ -1,0 +1,17 @@
+{
+	"name": "dbt-prefect-env",
+	"dockerFile": "../Dockerfile",
+	"settings": {
+		"python.defaultInterpreterPath": "/usr/local/bin/python",
+	},
+	"extensions": [
+		"ms-python.python",
+		"ms-python.vscode-pylance",
+	],
+	"mounts": [
+		"source=${localEnv:HOME}/.config/gcloud/,target=/root/.config/gcloud/,type=bind,consistency=cached",
+	],
+	"containerEnv": {
+		"DBT_PROFILES_DIR": "/workspaces/prefecttest/dbt/profiles"
+	}
+}

@@ -1,0 +1,13 @@
+insider:
+  outputs:
+    dev:
+      dataset: testproject1_testdataset1
+      fixed_retries: 1
+      location: us-central1 
+      method: oauth
+      priority: interactive
+      project: testproject1-348021
+      threads: 3
+      timeout_seconds: 300
+      type: bigquery
+  target: dev

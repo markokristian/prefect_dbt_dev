@@ -1,0 +1,1 @@
+prefect[templates, google, kubernetes]==1.2.0
